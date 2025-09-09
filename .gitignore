@@ -21,6 +21,7 @@ node_modules/
 dist/
 .svelte-kit/
 src/assets/services
+vite.config.js.timestamp-*
 
 # environment variables
 .env
