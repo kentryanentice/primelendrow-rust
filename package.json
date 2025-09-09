@@ -1,0 +1,25 @@
+{
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  },
+  "name": "primelendrow",
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "prebuild": "npm run prebuild --workspaces --if-present",
+    "pretest": "npm run prebuild --workspaces --if-present",
+    "start": "npm start --workspaces --if-present",
+    "test": "npm test --workspaces --if-present"
+  },
+  "type": "module",
+  "workspaces": [
+    "src/primelendrow"
+  ],
+  "dependencies": {
+    "react-helmet-async": "^2.0.5",
+    "react-router-dom": "^7.8.2"
+  },
+  "devDependencies": {
+    "sass": "^1.92.0"
+  }
+}

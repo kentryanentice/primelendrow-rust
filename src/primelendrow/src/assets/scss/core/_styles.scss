@@ -1,0 +1,41 @@
+@use 'global';
+
+@mixin flex-center($direction: column) {
+	display: flex;
+	flex-direction: $direction;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin gradient-text {
+	background: var(--color-accent);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+@mixin heading-style($size, $weight: 800, $shadow: var(--text-shadow-light)) {
+	width: 100%;
+	font-size: $size;
+	font-weight: $weight;
+	@include gradient-text;
+	text-shadow: $shadow;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--font-family);
+	user-select: none;
+}
+
+body {
+	background: var(--color-bg);
+	color: var(--color-text);
+	font-weight: 400;
+	min-height: 100vh;
+	@include flex-center(row);
+	overflow: hidden;
+	transition: background 0.4s ease, color 0.4s ease;
+}

@@ -1,0 +1,29 @@
+:root {
+	--font-family: 'Roboto', sans-serif;
+	--font-ssmall: 7px;
+	--font-xsmall: 12px;
+	--font-small: 15px;
+	--font-medium: 20px;
+	--font-large: 30px;
+    --font-xlarge: 60px;
+	--font-super: 90px;
+	--font-weight-small: 400;
+	--font-weight-medium: 600;
+	--font-weight-large: 800;
+
+	--color-bg: #C1E8FF;
+	--color-text: #021024;
+	--color-accent: #4a90e2;
+	--text-shadow-light: 0px 2px 4px rgba(0,0,0,0.2);
+	--box-shadow-light: 0px 2px 4px rgba(0,0,0,0.2);
+    --transition: all .3s ease-in-out;
+	--animation: all .3s ease-in-out forwards;
+}
+
+[data-theme='dark'] {
+	--color-bg: #021024;
+	--color-text: #C1E8FF;
+	--color-accent: #50e3c2;
+	--text-shadow-light: 0px 2px 6px rgba(255,255,255,0.15);
+	--box-shadow-light: 0px 2px 6px rgba(255,255,255,0.15);
+}

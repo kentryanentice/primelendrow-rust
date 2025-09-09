@@ -1,0 +1,44 @@
+{
+  "canisters": {
+    "engine": {
+      "candid": "src/engine/engine.did",
+      "package": "engine",
+      "wasm": "target/wasm32-unknown-unknown/release/engine.wasm",
+      "type": "rust"
+    },
+    "internet_identity": {
+      "type": "custom",
+      "candid": "https://github.com/dfinity/internet-identity/releases/download/release-2025-03-07-v2/internet_identity.did",
+      "wasm": "https://github.com/dfinity/internet-identity/releases/download/release-2025-03-07-v2/internet_identity_dev.wasm.gz",
+      "init_arg": "(opt record { captcha_config = opt record { max_unsolved_captchas= 50:nat64; captcha_trigger = variant {Static = variant {CaptchaDisabled}}}})",
+      "specified_id": "rdmx6-jaaaa-aaaaa-aaadq-cai",
+      "remote": {
+        "id": {
+          "ic": "rdmx6-jaaaa-aaaaa-aaadq-cai",
+          "playground": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+        }
+      },
+      "frontend": {
+        "entrypoint": "src/primelendrow/dist/index.html"
+      }
+    },
+    "primelendrow": {
+      "dependencies": [
+        "engine"
+      ],
+      "source": [
+        "src/primelendrow/dist"
+      ],
+      "type": "assets",
+      "workspace": "primelendrow"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": "mops sources"
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

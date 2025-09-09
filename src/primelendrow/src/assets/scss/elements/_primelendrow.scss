@@ -1,0 +1,14 @@
+@use '../core/global';
+@use '../core/styles';
+
+.copyright {
+	position: absolute;
+	bottom: 1.5%;
+	right: 1.5%;
+    color: var(--color-text);
+	font-size: var(--font-xsmall);
+	font-weight: var(--font-weight-medium);
+	z-index: 5000;
+	transition: var(--transition);
+	user-select: none;
+}

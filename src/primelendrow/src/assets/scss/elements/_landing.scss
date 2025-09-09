@@ -1,0 +1,93 @@
+@use '../core/global';
+@use '../core/styles';
+
+.landing-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    box-shadow: var(--box-shadow-light);
+    z-index: 100;
+    transition: var(--transition);
+	user-select: none;
+    @include styles.flex-center(row);
+    
+
+    .landing-logo {
+        position: absolute;
+        left: 2.5%;
+        width: 50px;
+        font-size: var(--font-ssmall);
+        // filter: drop-shadow(0px 0px 2px var(--color-text));
+        pointer-events: none;
+    }
+
+    .landing-title {
+        position: absolute;
+        left: 7%;
+        color: var(--color-text);
+        font-size: var(--font-large);
+        font-weight: var(--font-weight-small);
+        transition: var(--transition);
+    }
+
+    .landing-buttons {
+        position: absolute;
+        right: 2.5px;
+        height: 100%;
+        width: 500px;
+        gap: var(--font-large);
+        @include styles.flex-center(row);
+
+        .login {
+            position: relative;
+            height: 40px;
+            width: 140px;
+            color: var(--color-text);
+            font-size: var(--font-medium);
+            border: 2px solid var(--color-text);
+            border-radius: 50px;
+            box-shadow: 0px 0px 2px var(--color-text);
+            transition: var(--transition);
+            cursor: pointer;
+            @include styles.flex-center(row);
+        }
+
+        .register {
+            position: relative;
+            height: 40px;
+            width: 140px;
+            color: var(--color-bg);
+            font-size: var(--font-medium);
+            background: var(--color-text);
+            border: 2px solid var(--color-bg);
+            border-radius: 50px;    
+            box-shadow: 0px 0px 2px var(--color-text);
+            transition: var(--transition);
+            cursor: pointer;
+            @include styles.flex-center(row);
+        }
+
+        .login:hover,
+        .register:hover {
+            box-shadow: 0px 0px 10px var(--color-text); 
+            transition: var(--transition);
+        }
+
+        i {
+            position: relative;
+            color: var(--color-text);
+            font-size: var(--font-large);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        i:hover {
+            color: var(--color-text);
+            font-size: var(--font-large);
+            filter: drop-shadow(0px 0px .5px var(--color-text));
+            transition: var(--transition);
+        }
+    }
+}
