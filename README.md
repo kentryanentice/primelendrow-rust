@@ -1,4 +1,3 @@
-Video Pitch: https://drive.google.com/file/d/1aOlJupVpKyVXHaDSARtFfSHSTX38c7Yq/view?usp=drivesdk
 Hello, LendRow is a peer to peer lending platform, which directly impacts the sustainable development goal number 8, through financial access, debt management, and debt recovery. Along with its tagline, which is to connect with creditors and debtors around you.
 The issues which LendRow aims to address are as follows;
 first is the financial access, since over 70% of lowers income individuals still lacks access to traditional banking services,
