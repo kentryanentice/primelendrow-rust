@@ -1,9 +1,12 @@
 Hello, LendRow is a peer to peer lending platform, which directly impacts the sustainable development goal number 8, through financial access, debt management, and debt recovery. Along with its tagline, which is to connect with creditors and debtors around you.
+
 The issues which LendRow aims to address are as follows;
 first is the financial access, since over 70% of lowers income individuals still lacks access to traditional banking services,
 next is debt management, where people are often trapped in an infinite cycle of debt,
 and last is debt recovery, where predatory or aggressive lending contributes to the number of defaults which affects the image of the lending ecosystem.
+
 The target market of Lendrow are individual lenders or mirco-finance institutions who are actively looking for investment opportunities and also underserved individuals or small business owners needing financial support.
+
 The LendRow core functional components are as follows;
 KYC Verification System - The LendRow Verification page is for identity validation, where a user uploads a valid ID and updates their data with valid information, the LendRow administration will review that data and will decide whether to verify or reject the user.
 
@@ -13,8 +16,13 @@ The LendRow Borrower's page, where users browse through a number of posted lendi
 
 The LendRow payment page, once the lender disburses the funds to the applicant, a payment record will be generated, the borrower can use the payment page to pay their debt in a monthly installments with their digital money, the borrower also cannot apply for another debt and can only apply again once the previous debt are fully paid, a payment transaction record will also be generated for every payment made and it will also generate printable closure agreement with same format for the lending agreement.
 
-The finished version of lendrow was created using PHP as a server side language, HTML, CSS, and JAVASCRIPT(Ajax/JQuery) are used for the client side. LendRow's current architecture and its enhanced version is transitioned and currently being built using React JS as a frontend interface, the backend architecture was previously built using Motoko and was now transferred to Rust and will soon be deployed under Internet Computer Protocol or ICP. LendRow is now fully on-chain based transactions along with its most secure System Access Authentication using NFID and Internet Identity. The LendRow blockchain project is currently 20% done.
+The finished version of lendrow was created using PHP as a server side language, HTML, CSS, and JAVASCRIPT(Ajax/JQuery) are used for the client side. LendRow's current architecture and its enhanced version is transitioned and currently being built using React JS as a frontend interface, the backend architecture was previously built using Motoko and was now transferred to Rust and was already deployed under Internet Computer Protocol or ICP. 
+
+LendRow is now fully on-chain based transactions along with its most secure System Access Authentication using II 2.0, NFID, and NNS Wallet. The LendRow blockchain project is currently 20% done.
 The Solutions:
+
 The LendRow solution to Financial Access, is by providing individual lenders and micro-finance institutions a common ground to directly lend and earn money by granting funding or investment opportunities to underserved individuals and small business owners without the need for traditional intermediary. People can borrow quickly and can repay quickly with flexible loan amounts with low interest rates.
+
 The LendRow solution to Debt Management, is by minimizing or preventing borrowers entirely from acquiring multiple concurrent debts with One Debt At A Time Policy, and with credit history based borrowing which helps lenders know their applicants history.
+
 The LendRow solution to Debt Recovery, is by LendRow-guaranteed, collateral-based, and credit score-based lending which help protect lenders from defaults while also safeguarding borrowers from aggressive and predatory lending practices.
